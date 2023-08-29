@@ -8,6 +8,12 @@ h2,h3{
 p,h4,h5{
     color: hsl(201, 11%, 66%);
 }
+h5{
+    cursor: pointer;
+}
+h5:hover{
+    color: hsl(171, 66%, 44%) ;
+}
 .hea{
     background-image: url(bg-header-desktop.png);
     background-attachment: fixed;
@@ -129,10 +135,15 @@ footer{
 }
 .tag-1{
     padding-left: 15px;
+    cursor: pointer;
 }
-@media  (max-width:375px){
+.tag-1:hover{
+    filter: invert(25%) sepia() saturate(100000%) hue-rotate(174deg);
+  
+}
+@media  (max-width:600px){
     body{
-        max-width: 375px;
+        max-width: 600px;
         font-family: 'Bai Jamjuree', sans-serif;
         Font-size: 18px;
     }
@@ -198,6 +209,10 @@ footer{
     }
     .wid{
         width: 90%;
+        
+    }
+    img.wid {
+       margin: auto;
     }
     .middle-words{
         text-align: center;
